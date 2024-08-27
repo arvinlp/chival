@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import "../css/iransans.css";
+
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$iranSans: IRANSans, iransansdn;
+$iranSansNumber: IRANSansNumber;
+$iranSansNumber: IRANSansNumber, iransansdn;
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$white: #ffffff;
+
+// Panel
+$mainColor: #23252a;
+$secendColor: #282a2f;
+$overlayColor: #282a2fAF;
+$textColor: #939cb1;
+$menuLinkActive: #ffffff;
+$borderColor: rgba(147, 156, 177, 0.25);
+$tableBorderColor: rgba(147, 156, 177, 0.75);
+$tableTrTdBackground: #282a2f;
+$innerHeaderTitleColor: #367bf6;
+$buttonBorderBottom: rgb(82, 82, 82);
+$innerBodyHaveBorder: #373A42;
+$textDanger: #FF2D55;
+$textDanger2: rgb(155, 32, 54);
+$blueBackground: #75b36941;
+$plateBackgorund: #eccd00;
+// Footer
+$footerBgColor: $secendColor;
+$footerTextColor: $white;
+
+// Form Colors
+$formBoxBackgroundColor: #2d2f34;
+
+// Date Picker Colors
+$modalContentBg: $mainColor;
+$modalTextColor: $textColor;
+$modalBorderColor: $borderColor;
+
+// Date Picker Colors
+$datePickerHeaderFooterBg: $secendColor;
+$datePickerMainBg: $formBoxBackgroundColor;
+$datePickerSelectedBg: $innerHeaderTitleColor;
+$datePickerSelectedColor: $white;
+$datePickerElementColor: $white;
+
+// Seats Colors
+$seatTakedBgColor: #ff2d55;
+// $seatEmptyBgColor:#387FF7;
+$seatEmptyBgColor: #2553a1;
+$seatEmptyTextColor: #ffffff;
+$seatDriverBorderColor: $yellow;
+$ticketItemDriverBg: #939cb1;
+$ticketItemPassengerHaveChildBorder : #F6D431;
+$ticketItemNotInList : #75b36941;
+
+$sellingBoxBackground : #373A42;
+
+//Buttons Color
+$btnPrimaryBorderColor: #367bf6;
+$btnPrimaryColor: #367bf6;
+
+$btnDangerBorderColor: #f65d31;
+$btnDangerColor: #f65d31;
+
+$btnResetBorderColor: #939cb1;
+$btnResetColor: #939cb1;
+
+$btnSuccessBorderColor: #75b369;
+$btnSuccessColor: #75b369;
+
+$height100: 100vh;
+//
+$TurnListRowPendding : #75B369;
+$TurnListRowRejected : #F09FFF;
+$TurnListBtnPendding : #75B369;
+$TurnListBtnRejected : #F09FFF;
+$TurnListBtnTaxi : #F6D431;
+$TurnListRowInList : $TurnListBtnPendding;
+// $TurnListRowInList : #F68700;
+//
+$RecordRowActionColor : #75B369;
+
+.text-danger{
+    color: $textDanger2;
+}

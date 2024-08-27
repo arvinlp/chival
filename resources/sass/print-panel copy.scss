@@ -1,0 +1,61 @@
+// Variables
+@import "variables";
+@import "utils";
+
+$fa-font-path: "../webfonts";
+
+// Bootstrap
+// @import "~bootstrap/scss/bootstrap";
+// @import "vue-select/src/scss/vue-select.scss";
+// @import "~bootstrap-vue/src/index.scss";
+// @import "~bootstrap-select/dist/css/bootstrap-select.min.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "~vue-multiselect/dist/vue-multiselect.min.css";
+
+@page {
+    size: auto; /* auto is the initial value */
+    margin: auto; /* this affects the margin in the printer settings */
+}
+
+#print {
+    direction: ltr;
+}
+
+#ticket {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    font-family: $iranSansNumber;
+    font-weight: 500;
+    width: 100mm;
+    // height: 240mm;
+    margin: 0;
+    padding: 2.5mm;
+    color: #000;
+    background: #ffffff;
+    direction: rtl;
+    .row > div {
+        border: solid 0.5mm $mainColor;
+        margin: 0;
+        padding: 1mm;
+        text-align: center;
+    }
+    .row > div.bl-none {
+        border-left: none;
+        text-align: right;
+    }
+    .row > div.br-none {
+        border-right: none;
+        text-align: left;
+    }
+    .row > div.border-none {
+        border: none;
+    }
+    .row > div.mt-5mm {
+        margin-top: 5mm;
+    }
+    .row > div.mb-5mm {
+        margin-bottom: 5mm;
+    }
+}

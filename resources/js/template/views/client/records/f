@@ -1,0 +1,157 @@
+<div class="record">
+            <b-container fluid class="part-1">
+              <b-row class="row-1">
+                <b-col cols="3">
+                  <div v-if="ItemHandler.data.company_record">{{ItemHandler.data.company_record.province_name}}</div>
+                  <b-row v-if="ItemHandler.data.travel_record">
+                    <b-col>{{ItemHandler.data.travel_record.starting_city.name}}</b-col>
+                    <b-col>{{ItemHandler.data.travel_record.move_date}}</b-col>
+                  </b-row>
+                  <b-row v-if="ItemHandler.data.travel_record">
+                    <b-col>{{ItemHandler.data.travel_record.destanation_city.name}}</b-col>
+                    <b-col>{{ItemHandler.data.travel_record.move_time}}</b-col>
+                  </b-row>
+                </b-col>
+                <b-col cols="2"></b-col>
+                <b-col cols="1">
+                  <barcode
+                    v-if="ItemHandler.data.record_info"
+                    v-bind:value="ItemHandler.data.record_info.system_code"
+                    format="CODE39"
+                  />
+                </b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.driver_info_record" class="row-2">
+                <b-col cols="6"></b-col>
+                <b-col cols="5">{{ItemHandler.data.driver_info_record.driver_card_no}}</b-col>
+                <b-col cols="4">{{ItemHandler.data.driver_info_record.nation_code}}</b-col>
+                <b-col cols="3">{{ItemHandler.data.driver_info_record.driver_card_no}}</b-col>
+                <b-col cols="2">{{ItemHandler.data.driver_info_record.province_name}}</b-col>
+                <b-col cols="1">{{ItemHandler.data.driver_info_record.fname}} {{ItemHandler.data.driver_info_record.lname}}</b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.car_info_record" class="row-3">
+                <b-col cols="7">{{ItemHandler.data.car_info_record.car_card_no}}</b-col>
+                <b-col cols="6">{{ItemHandler.data.car_info_record.code}} - {{ItemHandler.data.car_info_record.expire_date}}</b-col>
+                <b-col cols="5">{{ItemHandler.data.chairs_number}}</b-col>
+                <b-col cols="4"><i class="fas fa-check-circle mr-5"></i></b-col>
+                <b-col cols="3">ایران</b-col>
+                <b-col cols="2">{{ItemHandler.data.car_info_record.plate_series}} </b-col>
+                <b-col cols="1">{{ItemHandler.data.car_info_record.plate_series_1}} {{ItemHandler.data.car_info_record.plate_series_2}} {{ItemHandler.data.car_info_record.plate_series_3}}</b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.car_info_record" class="row-4">
+                <b-col cols="10">{{ItemHandler.data.travel_record.insurance_third}}</b-col>
+                <b-col cols="3"></b-col>
+                <b-col cols="8">{{ItemHandler.data.travel_record.tax}}</b-col>
+                <b-col cols="5"></b-col>
+                <b-col cols="6">{{ItemHandler.data.travel_record.coast}}</b-col>
+                <b-col cols="7"></b-col>
+                <b-col cols="4">{{ItemHandler.data.travel_record.package}}</b-col>
+                <b-col cols="9"></b-col>
+                <b-col cols="2">{{ItemHandler.data.travel_record.passenger_number}}</b-col>
+                <b-col cols="11"></b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.car_info_record" class="row-5">
+                <b-col cols="1"></b-col>
+                <b-col cols="1"></b-col>
+                <b-col cols="6">{{ItemHandler.data.company_record.company_name}}</b-col>
+                <b-col cols="3"></b-col>
+                <b-col cols="5"></b-col>
+                <b-col cols="4">{{ItemHandler.data.travel_record.commission}}</b-col>
+                <b-col cols="7"></b-col>
+                <b-col cols="2">{{ItemHandler.data.travel_record.price}}</b-col>
+                <b-col cols="8"></b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.company_record" class="row-6">
+                <b-col cols="4">{{calendar}}</b-col>
+                <b-col cols="6"></b-col>
+                <b-col cols="5">{{ItemHandler.data.company_record.tell}}</b-col>
+                <b-col cols="7"></b-col>
+                <b-col cols="3">{{ItemHandler.data.company_record.province_name}}</b-col>
+                <b-col cols="2">{{ItemHandler.data.company_record.city_name}}</b-col>
+                <b-col cols="1">{{ItemHandler.data.company_record.company_code}}</b-col>
+              </b-row>
+            </b-container>
+            <b-container fluid class="part-2">
+              <b-row class="row-1">
+                <b-col cols="3">
+                  <div v-if="ItemHandler.data.company_record">{{ItemHandler.data.company_record.province_name}}</div>
+                  <div v-if="ItemHandler.data.travel_record">{{ItemHandler.data.travel_record.move_date}}</div>
+                </b-col>
+                <b-col cols="2"></b-col>
+                <b-col cols="1">
+                  <barcode
+                    v-if="ItemHandler.data.record_info"
+                    v-bind:value="ItemHandler.data.record_info.system_code"
+                    format="CODE39"
+                  />
+                </b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.driver_info_record" class="row-2">
+                <b-col cols="6"></b-col>
+                <b-col cols="5">{{ItemHandler.data.driver_info_record.driver_card_no}}</b-col>
+                <b-col cols="4">{{ItemHandler.data.driver_info_record.nation_code}}</b-col>
+                <b-col cols="3">{{ItemHandler.data.driver_info_record.driver_card_no}}</b-col>
+                <b-col cols="2">{{ItemHandler.data.driver_info_record.province_name}}</b-col>
+                <b-col cols="1">{{ItemHandler.data.driver_info_record.fname}} {{ItemHandler.data.driver_info_record.lname}}</b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.car_info_record" class="row-3">
+                <b-col cols="7">{{ItemHandler.data.car_info_record.car_card_no}}</b-col>
+                <b-col cols="6">{{ItemHandler.data.car_info_record.code}} - {{ItemHandler.data.car_info_record.expire_date}}</b-col>
+                <b-col cols="5">{{ItemHandler.data.chairs_number}}</b-col>
+                <b-col cols="4"><i class="fas fa-check-circle mr-5"></i></b-col>
+                <b-col cols="3">ایران</b-col>
+                <b-col cols="2">{{ItemHandler.data.car_info_record.plate_series}} </b-col>
+                <b-col cols="1">{{ItemHandler.data.car_info_record.plate_series_1}} {{ItemHandler.data.car_info_record.plate_series_2}} {{ItemHandler.data.car_info_record.plate_series_3}}</b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.travel_record" class="row-4">
+                <b-col cols="8">--------------------</b-col>
+                <b-col cols="7">-</b-col>
+                <b-col cols="6">-</b-col>
+                <b-col cols="5">-</b-col>
+                <b-col cols="4">{{ItemHandler.data.travel_record.destanation_city.name}}</b-col>
+                <b-col cols="3">{{ItemHandler.data.travel_record.move_time}}</b-col>
+                <b-col cols="2">{{ItemHandler.data.travel_record.starting_city.name}}</b-col>
+                <b-col cols="1"></b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.company_record" class="row-5">
+                <b-col cols="7"></b-col>
+                <b-col cols="2">{{ItemHandler.data.company_record.tell}}</b-col>
+                <b-col cols="3">{{ItemHandler.data.company_record.province_name}}</b-col>
+                <b-col cols="4">{{ItemHandler.data.company_record.city_name}}</b-col>
+                <b-col cols="5">{{ItemHandler.data.company_record.company_code}}</b-col>
+                <b-col cols="6">{{ItemHandler.data.company_record.company_name}}</b-col>
+                <b-col cols="1"></b-col>
+                <b-col cols="1"></b-col>
+              </b-row>
+            </b-container>
+            <b-container fluid class="part-3" v-if="ItemHandler.data.travel_passengers_info_record">
+              <b-row class="row-1" v-for="(item,index) in ItemHandler.data.travel_passengers_info_record" v-bind:key="index">
+                <b-col><span v-if="item.fname">{{item.fname}} </span><span v-if="item.lname">{{item.lname}}</span></b-col>
+              </b-row>
+            </b-container>
+            <b-container fluid class="part-4">
+              <b-row v-if="ItemHandler.data.travel_record" class="row-1">
+                <b-col cols="8"></b-col>
+                <b-col cols="2">{{ItemHandler.data.travel_record.package}}</b-col>
+                <b-col cols="6"></b-col>
+                <b-col cols="4">{{ItemHandler.data.travel_record.coast}}</b-col>
+                <b-col cols="5"></b-col>
+                <b-col cols="3"></b-col>
+                <b-col cols="7">{{ItemHandler.data.travel_record.passenger_number}}</b-col>
+                <b-col cols="1"></b-col>
+              </b-row>
+              <b-row v-if="ItemHandler.data.travel_record" class="row-2">
+                <b-col cols="11"></b-col>
+                <b-col cols="2">{{ItemHandler.data.travel_record.package}}</b-col>
+                <b-col cols="9"></b-col>
+                <b-col cols="8">{{ItemHandler.data.travel_record.commission}}</b-col>
+                <b-col cols="7"></b-col>
+                <b-col cols="6">{{ItemHandler.data.travel_record.fax}}</b-col>
+                <b-col cols="5"></b-col>
+                <b-col cols="4">{{ItemHandler.data.travel_record.insurance_third}}</b-col>
+                <b-col cols="3"></b-col>
+                <b-col cols="10">{{ItemHandler.data.travel_record.price}}</b-col>
+                <b-col cols="1"></b-col>
+              </b-row>
+            </b-container>
+          </div>

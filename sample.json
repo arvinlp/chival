@@ -1,0 +1,26 @@
+{
+    "IsSuccess": true,
+    "ErrorCode": 0,
+    "ErrorDescription": "transaction done",
+    "Data": {
+        "Identifier": "f2c5b9e2-27d7-4574-9194-72dafc871d6d",
+        "TerminalID": "31068795",
+        "TransactionType": "Purchase",
+        "AccountType": "Single",
+        "CreateOn": "2021-08-17T11:48:13.0779778+04:30",
+        "CreateBy": "6bbe4750-a7ff-4023-9172-f7ae8bf4ec79",
+        "ResponseCode": "00",
+        "ResponseDescription": "عملیات موفق",
+        "TraceNumber": "006640",
+        "ResNum": "123",
+        "RRN": "818994358184",
+        "State": 0,
+        "StateDescription": "transaction done",
+        "Amount": "10000",
+        "AffectiveAmount": "10000",
+        "PosAppVersion": "10.051.00PO",
+        "PosProtocolVersion": "V1.0.0.0",
+        "CardHashNumber":"-------------------",
+        "CardMaskNumber": "610433-##-0935"
+    }
+}

@@ -1,0 +1,14 @@
+/*
+ * @Author: arvinlp 
+ * @Date: 2020-02-29 21:52:50 
+ * Copyright by Arvin Loripour 
+ * WebSite : http://www.arvinlp.ir 
+ * @Last Modified by: Arvin.Loripour
+ * @Last Modified time: 2021-06-03 10:15:36
+ */
+
+@for $i from 1 through 100 {
+  .w-#{$i} {
+    width: $i * 1%
+  }
+}

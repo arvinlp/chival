@@ -1,0 +1,1715 @@
+// Variables
+@import "variables";
+@import "utils";
+
+$fa-font-path: "../../fonts/fontawesome";
+
+// Bootstrap
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/brands.scss";
+@import "./fontawesome/regular.scss";
+@import "./fontawesome/solid.scss";
+
+@import "../../node_modules/leaflet/dist/leaflet.css";
+
+// FontAwesome
+@import "~bootstrap/scss/bootstrap";
+@import "vue-select/src/scss/vue-select.scss";
+@import "~bootstrap-vue/src/index.scss";
+@import "~bootstrap-select/dist/css/bootstrap-select.min.css";
+@import "~vue-multiselect/dist/vue-multiselect.min.css";
+
+@import "print-panel.scss";
+
+html,
+body {
+  background: $mainColor;
+  font-family: $iranSans;
+  height: $height100;
+  margin: 0;
+  margin-bottom: 33px;
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+body > .datamis-mobile-disabled {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: $textColor;
+}
+body > .datamis-mobile-disabled span.logo {
+  content: url(../images/logo.png);
+  height: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  body > #app {
+    display: none;
+  }
+}
+.full-height {
+  height: calc(100vh - 10);
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 5rem;
+}
+::-webkit-scrollbar-track {
+  background: $secendColor;
+  border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: $textColor;
+  border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $formBoxBackgroundColor;
+  border-radius: 5rem;
+}
+/***/
+.table.b-table > thead > tr > [aria-sort]:not(.b-table-sort-icon-left),
+.table.b-table > tfoot > tr > [aria-sort]:not(.b-table-sort-icon-left) {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'%3e%3cpath fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22zM51 101l25-23 24-22H1l25 22z'/%3e%3c/svg%3e");
+}
+/***/
+#print {
+  // display: none;
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // background: $secendColor;
+  color: $textColor;
+  padding: 2rem 2rem;
+  // display: none;
+  .record {
+    display: none;
+  }
+}
+.record-print {
+  display: none;
+}
+/***/
+.tooltip {
+  font-family: $iranSansNumber;
+}
+.tooltip .b-tooltip-primary {
+  background: $innerHeaderTitleColor;
+  border-color: $innerHeaderTitleColor !important;
+}
+.tooltip.b-tooltip-primary .tooltip-inner {
+  color: $menuLinkActive;
+  background-color: $innerHeaderTitleColor;
+}
+/***/
+.top-menu {
+  padding: 1.5rem 15px;
+  margin-bottom: 0.3rem;
+}
+.top-menu ul {
+  width: 100%;
+  margin: 1.1rem 0;
+  padding: 0;
+  list-style: none;
+}
+.top-menu ul li {
+  display: inline-block;
+  margin-right: 0.9rem;
+}
+.top-menu ul li a {
+  color: $textColor;
+}
+.top-menu span.logo {
+  content: url(../images/logo.png);
+  height: 3.125rem;
+}
+/***/
+nav.navbar {
+  background: $secendColor;
+}
+nav.navbar .collapse .navbar-nav {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+nav.navbar .collapse .navbar-nav > li {
+  display: flex;
+  flex: 1%;
+  text-align: center;
+}
+nav.navbar .collapse .navbar-nav li a {
+  width: 100%;
+  color: $textColor;
+  font-size: 0.7rem;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active,
+nav.navbar .collapse .navbar-nav li.active > a,
+nav.navbar .collapse .navbar-nav li.show > a,
+nav.navbar .collapse .navbar-nav li.show > a:hover,
+nav.navbar .collapse .navbar-nav li.show > a:hover,
+nav.navbar .collapse .navbar-nav li > a:active,
+nav.navbar .collapse .navbar-nav li > a:hover,
+nav.navbar .collapse .navbar-nav .dropdown-menu a:hover,
+nav.navbar .collapse .navbar-nav .dropdown-menu a:focus {
+  color: $menuLinkActive;
+}
+nav.navbar .collapse .navbar-nav .dropdown-menu {
+  left: unset;
+  right: 0;
+  float: right;
+  text-align: right;
+  background-color: $secendColor;
+  border: 1px solid $secendColor;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+nav.navbar #navbarMain.collapse .navbar-nav li .dropdown-toggle::after {
+  display: none;
+}
+nav.navbar .collapse .navbar-nav .dropdown-menu .dropdown-item:hover,
+nav.navbar .collapse .navbar-nav .dropdown-menu .dropdown-item:focus {
+  background: transparent;
+}
+nav.navbar #navbarMain.collapse .navbar-nav > li > a.active,
+nav.navbar .collapse .navbar-nav .dropdown-menu .active {
+  background-color: $secendColor;
+  color: $textColor;
+}
+nav.navbar #navbarMain.collapse .navbar-nav > li > a.router-link-exact-active.active {
+  color: $menuLinkActive;
+}
+nav.navbar .collapse .navbar-nav .dropdown-menu .router-link-exact-active.active {
+  background-color: $mainColor;
+  color: $white;
+}
+/***/
+.counter-item,
+.vpd-date {
+  font-family: $iranSansNumber;
+}
+/***/
+.alert-datamis {
+  width: 25%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+/* Login Box */
+.panel-logo {
+  display: block;
+  content: url(../images/logo.png);
+  margin: 0 auto;
+}
+.login-box {
+  background: $secendColor;
+  color: $textColor;
+  padding: 1rem 3.125rem 2.125rem 3.125rem;
+  border: solid thin $borderColor;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.login-box-title {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 0.3rem;
+}
+/* Form */
+.login-box {
+  form {
+    padding: 1rem 0;
+    .form-control,
+    .form-control:focus {
+      font-family: $iranSans;
+      background: $secendColor;
+      color: white;
+      text-align: center;
+    }
+    .form-control::placeholder {
+      font-family: $iranSans;
+      background: $secendColor;
+      color: $textColor;
+    }
+    input::-webkit-credentials-auto-fill-button {
+      background-color: $textColor;
+    }
+    input::-webkit-inner-spin-button {
+      display: none;
+    }
+    .form-control {
+      border-radius: 1rem;
+      border: solid thin $borderColor;
+    }
+    .form-check {
+      padding-right: 1.25rem;
+      padding-left: 0;
+      text-align: right;
+    }
+    /* CheckBox */
+    .form-check-input[type="checkbox"],
+    .form-checkbox-input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"] + label span {
+      position: absolute;
+      right: -0.5rem;
+      width: 19px;
+      height: 19px;
+      margin: -2px 10px 0 0;
+      vertical-align: middle;
+      background: $mainColor;
+      border: solid thin $borderColor;
+      border-radius: 0.3rem;
+      cursor: pointer;
+    }
+    input[type="checkbox"]:checked + label span {
+      background: #3490dc;
+    }
+    .form-check-label {
+      font-weight: 100;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+/* Button */
+.btn-login {
+  margin: 0.25rem 0;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #3490dc;
+  border-color: #3490dc;
+  border-radius: 10rem;
+}
+.btn-login:hover {
+  background: $mainColor;
+  border-color: $borderColor;
+  color: #ffffff;
+}
+.btn-link {
+  width: 100%;
+  direction: rtl;
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: $textColor;
+}
+.btn-primary {
+  background: transparent;
+  border: $btnPrimaryBorderColor solid thin;
+  border-radius: 2rem;
+  color: $btnPrimaryColor;
+  font-size: 0.7rem;
+}
+.btn-primary:hover {
+  background: $btnPrimaryBorderColor;
+  color: $white;
+}
+.btn-reset {
+  background: transparent;
+  border: $btnResetBorderColor solid thin;
+  border-radius: 2rem;
+  color: $btnResetColor;
+  font-size: 0.7rem;
+}
+.btn-reset:hover {
+  background: $btnResetBorderColor;
+  color: $white;
+}
+.btn-icon {
+  background: transparent;
+  border: unset;
+  border-radius: 0;
+  margin: 0;
+  color: $btnResetColor;
+  font-size: 0.7rem;
+}
+.btn-icon:hover {
+  background: unset;
+  color: $white;
+}
+.btn-success {
+  background: transparent;
+  border: $btnSuccessBorderColor solid thin;
+  border-radius: 2rem;
+  color: $btnSuccessColor;
+  font-size: 0.7rem;
+}
+.btn-success:hover {
+  background: $btnSuccessBorderColor;
+  color: $white;
+}
+.btn-warning {
+  background: transparent;
+  border: $plateBackgorund solid thin;
+  border-radius: 2rem;
+  color: $plateBackgorund;
+  font-size: 0.7rem;
+}
+.btn-warning:hover {
+  background: $plateBackgorund;
+  color: $black;
+}
+.btn-danger {
+  background: transparent;
+  border: $btnDangerBorderColor solid thin;
+  border-radius: 2rem;
+  color: $btnDangerColor;
+  font-size: 0.7rem;
+}
+.btn-danger:hover {
+  background: $btnDangerBorderColor;
+  color: $white;
+}
+.btn-outline-danger {
+  color: $btnDangerBorderColor;
+  border-color: $btnDangerBorderColor;
+}
+.btn-outline-danger:hover {
+  color: $white;
+  background-color: $btnDangerBorderColor;
+}
+.btn-box {
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .btn-success:hover {
+    background: $btnSuccessBorderColor !important;
+    color: $white !important;
+  }
+  .btn-warning:hover {
+    background: $plateBackgorund !important;
+    color: $black !important;
+  }
+  .btn-danger:hover {
+    background: $btnDangerBorderColor !important;
+    color: $white !important;
+  }
+  .btn-outline-danger:hover {
+    color: $white !important;
+    background-color: $btnDangerBorderColor !important;
+  }
+}
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+/***/
+header.page {
+  padding: 1rem 0;
+  font-family: $iranSans;
+  .right {
+    text-align: right;
+    color: $textColor;
+    font-family: $iranSansNumber;
+    h4 {
+      font-weight: normal;
+    }
+  }
+  .left {
+    text-align: left;
+    color: $textColor;
+    font-family: $iranSansNumber;
+    span {
+      padding: 8.5px 0;
+      font-size: 0.7rem;
+    }
+    span.time {
+      border-right: solid 0.15rem $borderColor;
+      padding-right: 0.3rem;
+    }
+  }
+}
+.alert {
+  text-align: right;
+}
+.text-muted,
+.text-danger {
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+.page-404 .text-muted {
+  text-align: center;
+}
+.text-danger {
+  color: $textDanger2 !important;
+}
+.text-cheval-main-color {
+  color: $textColor;
+}
+/***/
+.img-circle {
+  border-radius: 50%;
+}
+/***/
+.b-sidebar {
+  direction: rtl;
+
+  .b-sidebar-header .close {
+    position: absolute;
+    z-index: 999;
+    left: 1rem;
+    top: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      text-align: center;
+      margin: 0.25rem 0;
+      padding: 0.25rem 0;
+    }
+    li:first-child {
+      margin-bottom: 0.5rem;
+    }
+    li:not(:first-child, :last-child) {
+      border-bottom: solid thin $borderColor;
+    }
+  }
+}
+/***/
+.modal-base,
+.page {
+  .form-control.custom-select,
+  .form-control.custom-select:focus {
+    font-family: $iranSans !important;
+    background: $secendColor !important;
+    color: white !important;
+    text-align: center !important;
+    border-radius: 1rem !important;
+    border: solid thin $borderColor !important;
+    font-size: 0.9rem !important;
+    margin: 0.5rem 0 !important;
+  }
+  .form-control.custom-select::placeholder {
+    font-family: $iranSans;
+    background: $secendColor;
+    color: $textColor;
+  }
+  input::-webkit-credentials-auto-fill-button {
+    background-color: $textColor;
+  }
+  input::-webkit-inner-spin-button {
+    display: none;
+  }
+  .modal-form,
+  form {
+    padding: 1rem 0;
+  }
+
+  .seat {
+    width: 150px;
+    height: 50px;
+    padding: 1rem;
+    background-color: $mainColor;
+    border: solid 0.2rem $white;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+    transition: border-radius 1s, background-color 1s, border-color 1s;
+
+    &.driver {
+      background-color: $mainColor;
+      width: 70px;
+      height: 70px;
+      padding: 1.5rem 0;
+      border-radius: 50%;
+      border-color: $seatDriverBorderColor;
+    }
+    &.null {
+      background-color: transparent;
+      border:unset;
+    }
+    &.empty {
+      background-color: $seatEmptyBgColor;
+      color: $seatEmptyTextColor;
+    }
+    &.taked {
+      background-color: $seatTakedBgColor;
+      &.female {
+        background: $seatTakedBgColor;
+      }
+      &.child {
+        border-color: $ticketItemPassengerHaveChildBorder;
+      }
+    }
+    &.selected-seat {
+      border-radius: 50%;
+    }
+  }
+
+  .inner-main {
+    background: $secendColor;
+    color: $textColor;
+    padding: 1rem 1rem;
+    border: solid thin $borderColor;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    .inner-header {
+      text-align: right;
+      color: $innerHeaderTitleColor;
+      font-weight: normal;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .inner-body.row:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+    .inner-body.row {
+      padding: 0 1rem;
+      div:not(:first-of-type) {
+        .form-group::before {
+          position: absolute;
+          content: "";
+          top: 1rem;
+          bottom: 1rem;
+          right: 0rem;
+          width: 0.05rem;
+          background-color: $borderColor;
+        }
+      }
+      .form-group {
+        position: relative;
+        height: 100%;
+        background-color: $formBoxBackgroundColor;
+        direction: rtl;
+        .form-check-label,
+        .col-form-label {
+          text-align: right;
+          font-size: 0.7rem;
+        }
+        /* Form Input */
+        .bootstrap-select {
+          width: 100%;
+          .dropdown-toggle .filter-option {
+            text-align: center;
+          }
+          .dropdown-menu {
+            background: $formBoxBackgroundColor;
+            .dropdown-item {
+              padding: 0.25rem 0.25rem 0.25rem 1.5rem;
+              text-align: right;
+              color: $textColor;
+            }
+            .dropdown-item.active,
+            .dropdown-item:active {
+              background: $formBoxBackgroundColor;
+              color: $textColor;
+            }
+          }
+          .no-results {
+            background: $formBoxBackgroundColor;
+            color: $textColor;
+          }
+        }
+        span.iban_ir {
+          color: white;
+          position: absolute;
+          left: 1.5rem;
+          top: 1rem;
+        }
+        .iban_number {
+          border-radius: 0.25rem;
+        }
+        .form-control.custom-select .bootstrap-select > .dropdown-toggle,
+        .form-control,
+        .form-control:focus {
+          font-family: $iranSans;
+          background: $secendColor;
+          color: white;
+          text-align: center;
+          border-radius: 1rem;
+          border: solid thin $borderColor;
+          font-size: 0.9rem;
+          margin: 0.5rem 0;
+        }
+        .form-control::placeholder {
+          font-family: $iranSans;
+          background: $secendColor;
+          color: $textColor;
+        }
+        input::-webkit-credentials-auto-fill-button {
+          background-color: $textColor;
+        }
+        input::-webkit-inner-spin-button {
+          display: none;
+        }
+        .form-radio-datamis,
+        .form-check-datamis {
+          text-align: right;
+        }
+        /* CheckBox */
+        .form-radio-input[type="radio"],
+        .form-check-input[type="checkbox"],
+        .form-checkbox-input[type="checkbox"] {
+          display: none;
+        }
+        input[type="radio"] + label span,
+        input[type="checkbox"] + label span {
+          display: inline-block;
+          right: 0.3rem;
+          width: 19px;
+          height: 19px;
+          margin: -2px 0 0 10px;
+          vertical-align: middle;
+          background: $mainColor;
+          border: solid thin $borderColor;
+          border-radius: 0.3rem;
+          cursor: pointer;
+        }
+        input[type="radio"] + label span {
+          border-radius: 50%;
+        }
+        input[type="radio"]:checked + label span,
+        input[type="checkbox"]:checked + label span {
+          background: #3490dc;
+        }
+        .form-radio-label,
+        .form-check-label {
+          display: inline-block;
+          padding: 0.5rem 0;
+          margin-bottom: unset;
+        }
+        textarea.form-control {
+          direction: rtl;
+          text-align: justify;
+        }
+        select.form-control[multiple] {
+          border-top-left-radius: 0.3rem;
+          border-bottom-left-radius: 0.3rem;
+        }
+        .travel-list {
+          list-style: none;
+          counter-reset: my-awesome-counter;
+          padding: 0;
+          li {
+            display: table-cell;
+            width: 1%;
+            counter-increment: my-awesome-counter;
+            &::before {
+              content: counter(my-awesome-counter) ". ";
+            }
+          }
+        }
+      }
+    }
+
+    .inner-body,
+    .ticket-row .inner-body.ticket-list,
+    .ticket-cell .inner-body.ticket-list {
+      position: relative;
+      padding: 0 1rem;
+      font-family: $iranSansNumber, $iranSans !important;
+
+      .overlay {
+        position: absolute;
+        display: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: $overlayColor;
+        z-index: 1;
+      }
+      .overlay::before {
+        content: "در حال دریافت اطلاعات ...";
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: calc(45% + 5%);
+        color: #fff;
+      }
+      .overlay.selling::before {
+        content: "همکاری دیگیر درحال فروش بیلط می باشد.";
+      }
+      .row.inner-row {
+        position: relative;
+        height: 100%;
+        padding: 1rem 0 0.5rem 0;
+        margin-bottom: 0.5rem;
+        background-color: $formBoxBackgroundColor;
+        direction: rtl;
+      }
+      .row.inner-row > div {
+        text-align: center;
+      }
+      .row.inner-row a {
+        color: $textColor !important;
+      }
+      .row.inner-row.pendding {
+        background-color: $TurnListRowPendding;
+        color: $white !important;
+      }
+      .row.inner-row.in-list {
+        background-color: $TurnListRowInList;
+        color: #ffffff !important;
+      }
+      .row.inner-row.in-list a {
+        color: #ffffff !important;
+      }
+      .row.inner-row.rejected {
+        background-color: $TurnListRowRejected;
+        color: $white !important;
+      }
+      .row.inner-row.pendding a,
+      .row.inner-row.rejected a {
+        color: $white !important;
+      }
+
+      .row.inner-row .btn-icon {
+        border: solid thin $borderColor;
+      }
+      .row.inner-row i.fa-times {
+        color: $TurnListBtnRejected;
+      }
+      .row.inner-row i.fa-bookmark {
+        color: $TurnListBtnPendding;
+      }
+      .row.inner-row i.fa-taxi {
+        color: $TurnListBtnTaxi;
+      }
+      .row.inner-row button:hover {
+        background: $black;
+      }
+
+      $turnListRowActionBorders: (
+        "pendding": "#000000",
+        "in-list": "#000000",
+        "rejected": "#000000",
+      );
+      $turnListRowActionTimes: (
+        "pendding": "#FF2D55",
+        "in-list": "#FFFFFF",
+        "rejected": "#FFFFFF",
+      );
+      $turnListRowActionEnvelope: (
+        "pendding": "#FFFFFF",
+        "in-list": "#FFFFFF",
+        "rejected": "#FFFFFF",
+      );
+      $turnListRowActionAngle: (
+        "pendding": "#FFFFFF",
+        "in-list": "#FFFFFF",
+        "rejected": "#FFFFFF",
+      );
+      $turnListRowActionBookmark: (
+        "pendding": "#000000",
+        "in-list": "#000000",
+        "rejected": "#000000",
+      );
+      $turnListRowActionBookmarkHover: (
+        "pendding": "#FFFFFF",
+        "in-list": "#FFFFFF",
+        "rejected": "#FFFFFF",
+      );
+      $turnListRowActionTaxi: (
+        "pendding": "#F6D431",
+        "in-list": "#F6D431",
+        "rejected": "#F6D431",
+      );
+      @each $name, $color in $turnListRowActionBorders {
+        .row.inner-row.#{$name} .btn-icon {
+          border: solid thin #{$color};
+        }
+      }
+      @each $name, $color in $turnListRowActionTimes {
+        .row.inner-row.#{$name} i.fa-times {
+          color: #{$color};
+        }
+      }
+      @each $name, $color in $turnListRowActionEnvelope {
+        .row.inner-row.#{$name} i.fa-envelope {
+          color: #{$color};
+        }
+      }
+      @each $name, $color in $turnListRowActionAngle {
+        .row.inner-row.#{$name} i.fa-angle-double-down {
+          color: #{$color};
+        }
+      }
+      @each $name, $color in $turnListRowActionBookmark {
+        .row.inner-row.#{$name} i.fa-bookmark {
+          color: #{$color};
+        }
+      }
+      @each $name, $color in $turnListRowActionBookmarkHover {
+        .row.inner-row.#{$name} button:hover i.fa-bookmark {
+          color: #{$color};
+        }
+      }
+      @each $name, $color in $turnListRowActionTaxi {
+        .row.inner-row.#{$name} i.fa-taxi {
+          color: #{$color};
+        }
+      }
+    }
+    .ticket-row .ticket-list,
+    .ticket-cell .ticket-list {
+      position: relative;
+      padding: 0;
+      font-family: $iranSansNumber, $iranSans !important;
+    }
+  }
+  .inner-main.height-100 {
+    height: calc(100% - 1rem) !important;
+  }
+  .ticket-row {
+    .ticket-item {
+      position: relative;
+      height: 100%;
+      background-color: $formBoxBackgroundColor;
+      direction: rtl;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      color: $textColor;
+      width: 100%;
+      &.not-in-list {
+        background-color: $ticketItemNotInList;
+      }
+      .btn-actions > div {
+        margin-bottom: 1rem;
+      }
+      .btn-actions > div:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: $textColor;
+      }
+    }
+  }
+  .ticket-cell:not(:first-of-type) .ticket::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0rem;
+    width: 0.05rem;
+    margin-right: -15px;
+    background-color: $innerBodyHaveBorder;
+  }
+  .single-ticket {
+    height: 100%;
+  }
+  .single-ticket .ticket::before {
+    display: none;
+  }
+  .ticket-cell .ticket {
+    position: relative;
+    height: 100%;
+    background-color: $formBoxBackgroundColor;
+    direction: rtl;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    color: $textColor;
+    width: 100%;
+    div.label,
+    div.seats {
+      padding: 0.5rem 0.25rem;
+      border-bottom: solid thin $innerBodyHaveBorder;
+    }
+    div:last-child {
+      border-bottom: none;
+    }
+    .seat {
+      width: 50px;
+      height: 50px;
+      padding: 0.8rem;
+      background: transparent;
+      border: solid 0.2rem $white;
+      text-align: center;
+      margin: 0 auto 1rem auto;
+      transition: border-radius 1s, background-color 1s, border-color 1s;
+      &.driver {
+        background: $ticketItemDriverBg;
+        border-radius: 50%;
+        border-color: $seatDriverBorderColor;
+      }
+      &.null {
+        background-color: transparent;
+        border:unset;
+      }
+      &.empty {
+        border-color: $white;
+      }
+      &.taked {
+        background: $seatEmptyBgColor;
+        border-color: $white;
+        color: $white;
+        &.female {
+          background: $seatTakedBgColor;
+        }
+        &.child {
+          border-color: $ticketItemPassengerHaveChildBorder;
+        }
+      }
+    }
+  }
+  .ticket.not-in-list {
+    background-color: $ticketItemNotInList;
+  }
+  .inner-second {
+    background: transparent;
+    color: $textColor;
+    padding: 0;
+    border: none;
+    margin-bottom: 1rem;
+    .note {
+      padding: 1rem;
+      text-align: justify;
+      background: $sellingBoxBackground;
+      color: $textDanger;
+      p {
+        font-weight: lighter;
+      }
+      p:last-child,
+      p:only-child {
+        margin: 0;
+      }
+    }
+    .note.bg-default {
+      background: $secendColor !important;
+      color: $textColor !important;
+    }
+  }
+  .vpd-input-group {
+    position: relative;
+    .vpd-icon-btn {
+      position: absolute;
+      background: unset !important;
+      top: 28%;
+      right: 1%;
+    }
+  }
+  .btn .fa-file-contract {
+    color: $RecordRowActionColor;
+  }
+  .button-body > div {
+    padding: 0;
+  }
+  .button-body {
+    border-bottom: $buttonBorderBottom solid thin;
+    margin-bottom: 1rem;
+    .button-main {
+      display: block;
+      text-align: right;
+      color: $textColor;
+      background: $secendColor;
+      color: $textColor;
+      padding: 1rem 1rem;
+      border: solid thin $borderColor;
+      border-radius: 0.5rem;
+      margin: 0 0 1rem 1rem;
+      a {
+        display: block;
+        text-align: right;
+        color: $textColor;
+      }
+      i {
+        margin-left: 0.65rem;
+      }
+      span.button-progress {
+        display: block;
+        width: 100%;
+        height: 0.35rem;
+        margin-top: 1rem;
+        background: $red;
+        border-radius: 2rem;
+      }
+      span.button-progress.red {
+        background: $red;
+      }
+    }
+  }
+  table.table {
+    color: $textColor;
+    margin-bottom: 1rem;
+    direction: rtl;
+    text-align: right;
+    font-family: $iranSansNumber;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+    vertical-align: middle;
+    thead tr th {
+      border-top: $borderColor solid thin;
+      font-weight: 200;
+      border-bottom: $tableBorderColor solid 0.1rem;
+      padding-top: 1.2rem;
+      padding-bottom: 0.7rem;
+    }
+    tbody tr.empty {
+      display: block;
+      width: 100%;
+      height: 1rem;
+    }
+    tbody tr td {
+      background: $tableTrTdBackground;
+      border: unset;
+      font-weight: 200;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    tbody tr td a {
+      color: $textColor;
+    }
+    tbody tr td a i {
+      border: $tableBorderColor solid 0.002rem;
+      padding: 0.45rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+  .multiselect {
+    background: transparent;
+    text-align: center;
+    display: block;
+    width: 100%;
+    min-height: $input-height;
+    padding: $input-padding-y 0;
+    box-sizing: unset;
+    .multiselect__spinner,
+    .multiselect__select {
+      top: 12px;
+      left: 8px;
+      right: unset;
+      background: $secendColor;
+    }
+    .multiselect__select {
+      height: 30px;
+    }
+    .multiselect__tags {
+      border-radius: 1rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 100%;
+      min-height: $input-height;
+      padding: $input-padding-y $input-padding-x;
+      font-family: $input-font-family;
+      @include font-size($input-font-size);
+      font-weight: $input-font-weight;
+      line-height: $input-line-height;
+      color: $input-color;
+      background-color: $secendColor;
+      background-clip: padding-box;
+      border: solid thin $borderColor;
+      div.selected {
+        display: inline-block;
+        width: 25%;
+        padding: 0 0 0.5rem 0;
+      }
+    }
+    .multiselect__tags-wrap {
+      color: $white;
+    }
+    .multiselect__content,
+    .multiselect__content-wrapper {
+      background: $mainColor;
+      border: solid thin $borderColor;
+      color: $white;
+    }
+    .multiselect__content-wrapper {
+      border-radius: 1rem;
+      border-top: unset;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      font-size: 0.7rem;
+      .multiselect__element {
+        font-size: 0.7rem;
+      }
+      .multiselect__option--selected {
+        font-size: 0.7rem;
+        background: $borderColor;
+        color: $white;
+      }
+    }
+    .multiselect__input,
+    .multiselect__single {
+      background: transparent;
+      color: white;
+    }
+    .multiselect__input::placeholder,
+    .multiselect__single::placeholder {
+      font-family: $iranSans;
+      background: $secendColor;
+      color: $textColor;
+    }
+  }
+  .dropdown-menu,
+  .dropdown-input,
+  .dropdown-input input,
+  .search-in-table.form-control,
+  .search-in-table.form-control:focus {
+    width: 100% !important;
+    font-family: $iranSans !important;
+    background: $secendColor !important;
+    color: white !important;
+    text-align: center !important;
+    border-radius: 1rem !important;
+    border: solid thin $borderColor !important;
+    font-size: 0.9rem !important;
+    margin: 0.5rem 0 !important;
+  }
+  .dropdown-menu .form-group {
+    margin: 0;
+  }
+  .dropdown-content {
+    background-color: $formBoxBackgroundColor !important;
+    border-color: $borderColor !important;
+    .dropdown-item {
+      padding: 0.25rem 0.25rem 0.25rem 1.5rem !important;
+      text-align: right !important;
+      color: $textColor !important;
+    }
+    .dropdown-item.active,
+    .dropdown-item:active {
+      background: $formBoxBackgroundColor !important;
+      color: $textColor !important;
+    }
+  }
+  .card-progress .card-progress-body {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: right;
+    color: $textColor;
+    min-height: 1rem;
+    background: $secendColor;
+    color: $textColor;
+    padding: 1rem 1rem;
+    border: solid thin $borderColor;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: $iranSansNumber;
+    i {
+      margin-left: 0.65rem;
+    }
+    div.card-progress-header {
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+    div.card-progress-header span {
+      font-size: 0.3rem;
+    }
+    div.card-progress-header h5.numbers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: lighter;
+    }
+    div.progress {
+      height: 0.45rem;
+      background-color: #f65d3190 !important;
+      .progress-bar,
+      .bg-default {
+        background-color: #f65d31 !important;
+      }
+      .bg-success {
+        background-color: #75b369 !important;
+      }
+      .bg-danger {
+        background-color: #e3342f !important;
+      }
+      .bg-primary {
+        background-color: #387ff7 !important;
+      }
+    }
+    div.progress.bg-default {
+      background-color: #f65d3190 !important;
+    }
+    div.progress.bg-success {
+      background-color: #75b36990 !important;
+    }
+    div.progress.bg-danger {
+      background-color: #e3342f90 !important;
+    }
+    div.progress.bg-primary {
+      background-color: #387ff790 !important;
+    }
+  }
+  .pick_profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: $formBoxBackgroundColor;
+    input {
+      display: inline-block;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      cursor: pointer;
+    }
+    img.profile {
+      display: block;
+      opacity: 1;
+      z-index: 95;
+      cursor: pointer;
+      margin: 1rem auto;
+      width: 60%;
+    }
+    .profile_placeholder {
+      display: inline-block;
+      opacity: 0.5;
+      position: absolute;
+      top: 35%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      line-height: 2rem;
+      text-align: center;
+      z-index: 88;
+      cursor: pointer;
+    }
+  }
+}
+.modal-form {
+  .modal-row,
+  p {
+    background-color: $formBoxBackgroundColor;
+    padding: 1rem 0.5rem;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+  }
+  .form-group {
+    position: relative;
+    height: 100%;
+    background-color: $formBoxBackgroundColor;
+    direction: rtl;
+    .form-check-label,
+    .col-form-label {
+      text-align: right;
+      font-size: 0.7rem;
+    }
+    /* Form Input */
+    .bootstrap-select {
+      width: 100%;
+      .dropdown-toggle .filter-option {
+        text-align: center;
+      }
+      .dropdown-menu {
+        background: $formBoxBackgroundColor;
+        .dropdown-item {
+          padding: 0.25rem 0.25rem 0.25rem 1.5rem;
+          text-align: right;
+          color: $textColor;
+        }
+        .dropdown-item.active,
+        .dropdown-item:active {
+          background: $formBoxBackgroundColor;
+          color: $textColor;
+        }
+      }
+      .no-results {
+        background: $formBoxBackgroundColor;
+        color: $textColor;
+      }
+    }
+    .form-control.custom-select .bootstrap-select > .dropdown-toggle,
+    .form-control,
+    .form-control:focus {
+      font-family: $iranSans;
+      background: $secendColor;
+      color: white;
+      text-align: center;
+      border-radius: 1rem;
+      border: solid thin $borderColor;
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+    }
+    .form-control::placeholder {
+      font-family: $iranSans;
+      // background: $secendColor;
+      color: $textColor;
+    }
+    input::-webkit-credentials-auto-fill-button {
+      background-color: $textColor;
+    }
+    input::-webkit-inner-spin-button {
+      display: none;
+    }
+    .form-radio-datamis,
+    .form-check-datamis {
+      text-align: right;
+    }
+    /* CheckBox */
+    .form-radio-input[type="radio"],
+    .form-check-input[type="checkbox"],
+    .form-checkbox-input[type="checkbox"] {
+      display: none;
+    }
+    input[type="radio"] + label span,
+    input[type="checkbox"] + label span {
+      display: inline-block;
+      right: 0.3rem;
+      width: 19px;
+      height: 19px;
+      margin: -2px 0 0 10px;
+      vertical-align: middle;
+      background: $mainColor;
+      border: solid thin $borderColor;
+      border-radius: 0.3rem;
+      cursor: pointer;
+    }
+    input[type="radio"] + label span {
+      border-radius: 50%;
+    }
+    input[type="radio"]:checked + label span,
+    input[type="checkbox"]:checked + label span {
+      background: #3490dc;
+    }
+    .form-radio-label,
+    .form-check-label {
+      display: inline-block;
+      padding: 0.5rem 0;
+      margin-bottom: unset;
+    }
+    textarea.form-control {
+      direction: rtl;
+      text-align: justify;
+    }
+    select.form-control[multiple] {
+      border-top-left-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+    }
+  }
+  .multiselect {
+    background: transparent;
+    text-align: center;
+    display: block;
+    width: 100%;
+    min-height: $input-height;
+    padding: $input-padding-y 0;
+    box-sizing: unset;
+    .multiselect__spinner,
+    .multiselect__select {
+      top: 12px;
+      left: 8px;
+      right: unset;
+      background: $secendColor;
+    }
+    .multiselect__select {
+      height: 30px;
+    }
+    .multiselect__tags {
+      border-radius: 1rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      width: 100%;
+      min-height: $input-height;
+      padding: $input-padding-y $input-padding-x;
+      font-family: $input-font-family;
+      @include font-size($input-font-size);
+      font-weight: $input-font-weight;
+      line-height: $input-line-height;
+      color: $input-color;
+      background-color: $secendColor;
+      background-clip: padding-box;
+      border: solid thin $borderColor;
+      div.selected {
+        display: inline-block;
+        width: 25%;
+        padding: 0 0 0.5rem 0;
+      }
+    }
+    .multiselect__tags-wrap {
+      color: $white;
+    }
+    .multiselect__content,
+    .multiselect__content-wrapper {
+      background: $mainColor;
+      border: solid thin $borderColor;
+      color: $white;
+    }
+    .multiselect__content-wrapper {
+      border-radius: 1rem;
+      border-top: unset;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      font-size: 0.7rem;
+      .multiselect__element {
+        font-size: 0.7rem;
+      }
+      .multiselect__option--selected {
+        font-size: 0.7rem;
+        background: $borderColor;
+        color: $white;
+      }
+    }
+    .multiselect__input,
+    .multiselect__single {
+      background: transparent;
+      color: white;
+    }
+    .multiselect__input::placeholder,
+    .multiselect__single::placeholder {
+      font-family: $iranSans;
+      background: $secendColor;
+      color: $textColor;
+    }
+  }
+  .dropdown-menu,
+  .dropdown-input,
+  .dropdown-input input,
+  .search-in-table.form-control,
+  .search-in-table.form-control:focus {
+    width: 100% !important;
+    font-family: $iranSans !important;
+    background: $secendColor !important;
+    color: white !important;
+    text-align: center !important;
+    border-radius: 1rem !important;
+    border: solid thin $borderColor !important;
+    font-size: 0.9rem !important;
+    margin: 0.5rem 0 !important;
+  }
+  .vpd-input-group {
+    position: relative;
+    .vpd-icon-btn {
+      position: absolute;
+      background: unset !important;
+      top: 28%;
+      right: 1%;
+    }
+  }
+}
+.pagination {
+  direction: ltr;
+  margin: 0.5rem 0;
+  .page-item .page-link {
+    color: $textColor;
+    background-color: $secendColor;
+    border-color: $borderColor;
+  }
+  .page-item.active .page-link {
+    color: $textColor;
+    background-color: $borderColor;
+    border-color: $borderColor;
+    border-radius: 0;
+  }
+  .page-item:first-child .page-link,
+  .page-item:last-child .page-link {
+    border-radius: 0;
+  }
+}
+.vpd-container {
+  .vpd-actions,
+  .vpd-header {
+    background-color: $datePickerHeaderFooterBg !important;
+  }
+  .vpd-date.direction-prev {
+    text-align: center;
+  }
+  .vpd-body {
+    background-color: $datePickerMainBg;
+    svg path {
+      fill: $datePickerElementColor;
+    }
+    .vpd-addon-list,
+    .vpd-addon-list-content {
+      background-color: $datePickerMainBg !important;
+    }
+    .vpd-addon-list,
+    .vpd-day-effect,
+    .vpd-addon-list-item {
+      border-color: $datePickerMainBg !important;
+    }
+    .vpd-day.selected .vpd-day-effect,
+    .vpd-day:hover .vpd-day-effect,
+    .vpd-addon-list-item.selected,
+    .vpd-addon-list-item:hover {
+      background-color: $datePickerSelectedBg !important;
+      color: $datePickerSelectedColor !important;
+    }
+    .vpd-close-addon {
+      color: $datePickerElementColor;
+    }
+  }
+  .vpd-actions {
+    text-align: center;
+    button {
+      color: $textColor !important;
+    }
+    button:hover {
+      background-color: $textColor !important;
+      color: $white !important;
+    }
+  }
+}
+.record-item {
+  .split {
+    margin: 0.5rem 0 0 0;
+    border-bottom: solid thin $borderColor;
+  }
+  .passenger {
+    border-left: solid thin $borderColor;
+  }
+  .passenger:last-child {
+    border-left: none;
+  }
+}
+/***/
+[data-status="95"] {
+  background-color: $blueBackground !important;
+}
+/***/
+.modal {
+  .modal-dialog {
+    .modal-content {
+      background-color: $modalContentBg;
+      color: $modalTextColor;
+      padding: 1rem 1rem;
+      border: solid thin $modalBorderColor;
+      .modal-header,
+      .modal-footer {
+        border-color: $modalBorderColor;
+      }
+      .modal-body {
+        text-align: right;
+      }
+      .modal-footer {
+        padding: 0.75rem 0;
+      }
+      .modal-footer > div {
+        display: flex;
+        width: 100%;
+      }
+      .modal-footer > div > div {
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .modal-footer > div > div.datamis-btn-box {
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+.plate {
+  width: 100%;
+  background: $plateBackgorund;
+  border: solid thin #000;
+  border-radius: 0.25rem;
+  color: #000000 !important;
+  .county {
+    position: relative;
+    border: none;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    display: table-cell;
+    width: 1%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: solid thin #000;
+    .county_code {
+      position: absolute;
+      font-size: 0.8rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+  .county::before {
+    content: "ایران";
+    position: absolute;
+    font-size: 0.4rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .part {
+    display: table-cell;
+    width: 1%;
+    padding: 0.25rem 0.25rem 0.25rem 0;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+/***/
+body > div > footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $footerBgColor;
+  color: $footerTextColor;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  z-index: 9999;
+  a,
+  a:hover {
+    color: $footerTextColor;
+    text-decoration: none;
+  }
+}
+/****/
+.leaflet-pane {
+  font-family: $iranSans;
+  font-weight: bold;
+}
+.leaflet-control-attribution {
+  &.leaflet-control {
+    font-family: $iranSans;
+    font-weight: bold;
+  }
+}
+.multiselect__content-wrapper {
+  z-index: 1100;
+}
+.multiselect--active {
+  z-index: 1100;
+}
+
+.travel_price {
+  font-family: $iranSansNumber !important;
+}
+
+@for $i from 10 through 900 {
+  .font-size-#{$i} {
+    font-size: $i * 0.01rem !important;
+  }
+}
+.loading{
+  text-align: center;
+  svg{
+    color: #e3342f;
+  }
+  .label{
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,1611 @@
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url(/fonts/IRANSansWeb_Black.eot?465387eeda5050a622ba869f13e53119);
+	src: url(/fonts/IRANSansWeb_Black.eot?465387eeda5050a622ba869f13e53119?#iefix) format('embedded-opentype'),  
+		 url(/fonts/IRANSansWeb_Black.woff2?63911f38b2d0bb0650d18555d793dad3) format('woff2'),  
+		 url(/fonts/IRANSansWeb_Black.woff?818f7796aeb3cc761b74334bb0b9aa35) format('woff'),  
+		 url(/fonts/IRANSansWeb_Black.ttf?7174439308f3d61c0c1f67fd3e052c78) format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url(/fonts/IRANSansWeb_Bold.eot?a65cbf91ec2b253357f7621900ef29a4);
+	src: url(/fonts/IRANSansWeb_Bold.eot?a65cbf91ec2b253357f7621900ef29a4?#iefix) format('embedded-opentype'),  
+		 url(/fonts/IRANSansWeb_Bold.woff2?2f6f164c3e1f1329cc658b3c725bfd98) format('woff2'),  
+		 url(/fonts/IRANSansWeb_Bold.woff?d44408d0941f077f60b1306e1331e806) format('woff'),  
+		 url(/fonts/IRANSansWeb_Bold.ttf?9471804b0f92127716fabbbb2c6647e5) format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url(/fonts/IRANSansWeb_Medium.eot?c18ca268db923d61b1c9f06415f4c143);
+	src: url(/fonts/IRANSansWeb_Medium.eot?c18ca268db923d61b1c9f06415f4c143?#iefix) format('embedded-opentype'),  
+		 url(/fonts/IRANSansWeb_Medium.woff2?7c1c84da23760b0d3f59f8de58c47605) format('woff2'),  
+		 url(/fonts/IRANSansWeb_Medium.woff?7bfa046de6ec101d790ba8a54886dc9a) format('woff'),  
+		 url(/fonts/IRANSansWeb_Medium.ttf?894895856574b0e65e2739d1a2d1de42) format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url(/fonts/IRANSansWeb_Light.eot?9d7efb918cab94704068d84361d3f898);
+	src: url(/fonts/IRANSansWeb_Light.eot?9d7efb918cab94704068d84361d3f898?#iefix) format('embedded-opentype'),  
+		 url(/fonts/IRANSansWeb_Light.woff2?7c207019aa62aa4778add0c2b3372720) format('woff2'),  
+		 url(/fonts/IRANSansWeb_Light.woff?aac7a640c059ee7f46c35c2019434117) format('woff'),  
+		 url(/fonts/IRANSansWeb_Light.ttf?e5b2acaef933a97fa3fb026d8ee73d46) format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url(/fonts/IRANSansWeb_UltraLight.eot?eb6bb7948783b20ce01dbb2d103db8df);
+	src: url(/fonts/IRANSansWeb_UltraLight.eot?eb6bb7948783b20ce01dbb2d103db8df?#iefix) format('embedded-opentype'),  
+		 url(/fonts/IRANSansWeb_UltraLight.woff2?e0e6c92f90cf30782f81d80a37c22c54) format('woff2'),  
+		 url(/fonts/IRANSansWeb_UltraLight.woff?2097362beeb263fdd902ad249202cd79) format('woff'),  
+		 url(/fonts/IRANSansWeb_UltraLight.ttf?f8a4f6910724c0373ffd38add5cea6ac) format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url(/fonts/IRANSansWeb.eot?70a5f97c18c45e8ef620a374be61c6c3);
+	src: url(/fonts/IRANSansWeb.eot?70a5f97c18c45e8ef620a374be61c6c3?#iefix) format('embedded-opentype'),  
+		 url(/fonts/IRANSansWeb.woff2?9d38733b8a7b9153f2bf9bfe476ef8e3) format('woff2'),  
+		 url(/fonts/IRANSansWeb.woff?50f4bba2f37081daeca8c423abdced8b) format('woff'),  
+		 url(/fonts/IRANSansWeb.ttf?244a401eb43afb0fe739f8dcd8530ae4) format('truetype');
+}
+/**/
+
+@font-face {
+	font-family: iransansdn;
+	font-style: normal;
+	font-weight: bold;
+	src: url(/fonts/iransansdnwebbold.eot?e8165f7a388318a4b0da79c8f3d2b2fd);
+	src: url(/fonts/iransansdnwebbold.eot?e8165f7a388318a4b0da79c8f3d2b2fd?#iefix) format('embedded-opentype'),  
+		 url(/fonts/iransansdnwebbold.woff2?82f159883cc68ad66bb7392ac20e4045) format('woff2'),  
+		 url(/fonts/iransansdnwebbold.woff?90fddb477dc8cd322826f4eed0719d49) format('woff'),  
+		 url(/fonts/iransansdnwebbold.ttf?64e033f99f8b95953df125f88cee8268) format('truetype');
+}
+
+@font-face {
+	font-family: iransansdn;
+	font-style: normal;
+	font-weight: 300;
+	src: url(/fonts/iransansdnweblight.eot?1418c8e53aa6d35b2754826706f5722b);
+	src: url(/fonts/iransansdnweblight.eot?1418c8e53aa6d35b2754826706f5722b?#iefix) format('embedded-opentype'),  
+		 url(/fonts/iransansdnweblight.woff2?e87d72f50a3859b40f7b4d5246d5df2f) format('woff2'),  
+		 url(/fonts/iransansdnweblight.woff?37c7f38e9c5c11bbf588ad593d5cf126) format('woff'),  
+		 url(/fonts/iransansdnweblight.ttf?e89ae9dc9f11b7d5e3cc1716e1722071) format('truetype');
+}
+
+@font-face {
+	font-family: iransansdn;
+	font-style: normal;
+	font-weight: normal;
+	src: url(/fonts/iransansdnweb.eot?080752485b7ec8837f9a26cd7c370139);
+	src: url(/fonts/iransansdnweb.eot?080752485b7ec8837f9a26cd7c370139?#iefix) format('embedded-opentype'),  
+		 url(/fonts/iransansdnweb.woff2?435a590ebb4929cd5b2cbe07e88ae6ca) format('woff2'),  
+		 url(/fonts/iransansdnweb.woff?54e2c53a321dd90785d70ba58d68ecdf) format('woff'),  
+		 url(/fonts/iransansdnweb.ttf?72d6571ac2c9cd4e2c95103595454e1b) format('truetype');
+}
+/**/
+
+@font-face {
+	font-family: IRANSansNumber;
+	font-style: normal;
+	font-weight: 900;
+	src: url("/fonts/IRANSansWeb(FaNum)_Black.eot?0cbe440ec1a4fe42b009993fd8997102");
+	src: url("/fonts/IRANSansWeb(FaNum)_Black.eot?0cbe440ec1a4fe42b009993fd8997102"?#iefix) format('embedded-opentype'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Black.woff2?3d585538e07c21fcb21ae1b8a22b15f6") format('woff2'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Black.woff?6e6d05b40fcf673a30ba169b0a253f3a") format('woff'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Black.ttf?879c6f004e698c7b5c0d46b211ea0c5e") format('truetype');
+}
+@font-face {
+	font-family: IRANSansNumber;
+	font-style: normal;
+	font-weight: bold;
+	src: url("/fonts/IRANSansWeb(FaNum)_Bold.eot?cacb94575d6d37423b7395837795b5d9");
+	src: url("/fonts/IRANSansWeb(FaNum)_Bold.eot?cacb94575d6d37423b7395837795b5d9"?#iefix) format('embedded-opentype'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Bold.woff2?924be0f8e3cabca094307ecb48684f46") format('woff2'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Bold.woff?6ed6ddfe60d741b22e0e8ba1cb6797fb") format('woff'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Bold.ttf?cf916372aab6c12b1ff00b062e843315") format('truetype');
+}
+@font-face {
+	font-family: IRANSansNumber;
+	font-style: normal;
+	font-weight: 500;
+	src: url("/fonts/IRANSansWeb(FaNum)_Medium.eot?5a250015803362c88ca2ece29e25cc32");
+	src: url("/fonts/IRANSansWeb(FaNum)_Medium.eot?5a250015803362c88ca2ece29e25cc32"?#iefix) format('embedded-opentype'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Medium.woff2?84518599d382334f09e67ade7fc530a0") format('woff2'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Medium.woff?32cc2377fd676f2386d705b3b6870020") format('woff'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Medium.ttf?caa93b16eb15d10bd1437ba92f9d80dc") format('truetype');
+}
+@font-face {
+	font-family: IRANSansNumber;
+	font-style: normal;
+	font-weight: 300;
+	src: url("/fonts/IRANSansWeb(FaNum)_Light.eot?fe6168031376d4b4d922d0bad21a4b9a");
+	src: url("/fonts/IRANSansWeb(FaNum)_Light.eot?fe6168031376d4b4d922d0bad21a4b9a"?#iefix) format('embedded-opentype'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Light.woff2?d11c4908fd4ced3fcc8d3d7930977c6b") format('woff2'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Light.woff?74955f1682e35e2e0dbb713f1c2e4ccd") format('woff'),  
+		 url("/fonts/IRANSansWeb(FaNum)_Light.ttf?160493399f8b048d4186ca4e22bc431d") format('truetype');
+}
+@font-face {
+	font-family: IRANSansNumber;
+	font-style: normal;
+	font-weight: 200;
+	src: url("/fonts/IRANSansWeb(FaNum)_UltraLight.eot?368174c01a61e691225ce1e4d57a97e4");
+	src: url("/fonts/IRANSansWeb(FaNum)_UltraLight.eot?368174c01a61e691225ce1e4d57a97e4"?#iefix) format('embedded-opentype'),  
+		 url("/fonts/IRANSansWeb(FaNum)_UltraLight.woff2?b543a9ad792d1ad75925c1836e3db5dc") format('woff2'),  
+		 url("/fonts/IRANSansWeb(FaNum)_UltraLight.woff?b35fd8e1a262d49862daa44b80af1b84") format('woff'),  
+		 url("/fonts/IRANSansWeb(FaNum)_UltraLight.ttf?264f4a4b036c9a87bee09f4e20929ac6") format('truetype');
+}
+@font-face {
+	font-family: IRANSansNumber;
+	font-style: normal;
+	font-weight: normal;
+	src: url("/fonts/IRANSansWeb(FaNum).eot?07e13ce12b31374a49045aa55af2c0ad");
+	src: url("/fonts/IRANSansWeb(FaNum).eot?07e13ce12b31374a49045aa55af2c0ad"?#iefix) format('embedded-opentype'),  
+		 url("/fonts/IRANSansWeb(FaNum).woff2?38d4b5fba7a4955e035b5a3898a8cd5d") format('woff2'),  
+		 url("/fonts/IRANSansWeb(FaNum).woff?d4bb655d07591559e417030519d6fa20") format('woff'),  
+		 url("/fonts/IRANSansWeb(FaNum).ttf?a5080d9e55b71a50ecd7b7d7ad022754") format('truetype');
+}
+.text-danger {
+  color: #9b2036;
+}
+
+/*
+ * @Author: arvinlp 
+ * @Date: 2020-02-29 21:52:50 
+ * Copyright by Arvin Loripour 
+ * WebSite : http://www.arvinlp.ir 
+ * @Last Modified by: Arvin.Loripour
+ * @Last Modified time: 2021-06-03 10:15:36
+ */
+
+.w-1 {
+  width: 1%;
+}
+
+.w-2 {
+  width: 2%;
+}
+
+.w-3 {
+  width: 3%;
+}
+
+.w-4 {
+  width: 4%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.w-6 {
+  width: 6%;
+}
+
+.w-7 {
+  width: 7%;
+}
+
+.w-8 {
+  width: 8%;
+}
+
+.w-9 {
+  width: 9%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-11 {
+  width: 11%;
+}
+
+.w-12 {
+  width: 12%;
+}
+
+.w-13 {
+  width: 13%;
+}
+
+.w-14 {
+  width: 14%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-16 {
+  width: 16%;
+}
+
+.w-17 {
+  width: 17%;
+}
+
+.w-18 {
+  width: 18%;
+}
+
+.w-19 {
+  width: 19%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-21 {
+  width: 21%;
+}
+
+.w-22 {
+  width: 22%;
+}
+
+.w-23 {
+  width: 23%;
+}
+
+.w-24 {
+  width: 24%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-26 {
+  width: 26%;
+}
+
+.w-27 {
+  width: 27%;
+}
+
+.w-28 {
+  width: 28%;
+}
+
+.w-29 {
+  width: 29%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-31 {
+  width: 31%;
+}
+
+.w-32 {
+  width: 32%;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.w-34 {
+  width: 34%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-36 {
+  width: 36%;
+}
+
+.w-37 {
+  width: 37%;
+}
+
+.w-38 {
+  width: 38%;
+}
+
+.w-39 {
+  width: 39%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-41 {
+  width: 41%;
+}
+
+.w-42 {
+  width: 42%;
+}
+
+.w-43 {
+  width: 43%;
+}
+
+.w-44 {
+  width: 44%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-46 {
+  width: 46%;
+}
+
+.w-47 {
+  width: 47%;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-51 {
+  width: 51%;
+}
+
+.w-52 {
+  width: 52%;
+}
+
+.w-53 {
+  width: 53%;
+}
+
+.w-54 {
+  width: 54%;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.w-56 {
+  width: 56%;
+}
+
+.w-57 {
+  width: 57%;
+}
+
+.w-58 {
+  width: 58%;
+}
+
+.w-59 {
+  width: 59%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-61 {
+  width: 61%;
+}
+
+.w-62 {
+  width: 62%;
+}
+
+.w-63 {
+  width: 63%;
+}
+
+.w-64 {
+  width: 64%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-67 {
+  width: 67%;
+}
+
+.w-68 {
+  width: 68%;
+}
+
+.w-69 {
+  width: 69%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-71 {
+  width: 71%;
+}
+
+.w-72 {
+  width: 72%;
+}
+
+.w-73 {
+  width: 73%;
+}
+
+.w-74 {
+  width: 74%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-76 {
+  width: 76%;
+}
+
+.w-77 {
+  width: 77%;
+}
+
+.w-78 {
+  width: 78%;
+}
+
+.w-79 {
+  width: 79%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-81 {
+  width: 81%;
+}
+
+.w-82 {
+  width: 82%;
+}
+
+.w-83 {
+  width: 83%;
+}
+
+.w-84 {
+  width: 84%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-86 {
+  width: 86%;
+}
+
+.w-87 {
+  width: 87%;
+}
+
+.w-88 {
+  width: 88%;
+}
+
+.w-89 {
+  width: 89%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-91 {
+  width: 91%;
+}
+
+.w-92 {
+  width: 92%;
+}
+
+.w-93 {
+  width: 93%;
+}
+
+.w-94 {
+  width: 94%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-96 {
+  width: 96%;
+}
+
+.w-97 {
+  width: 97%;
+}
+
+.w-98 {
+  width: 98%;
+}
+
+.w-99 {
+  width: 99%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+html,
+body {
+  background: #23252a;
+  font-family: IRANSans, iransansdn;
+  height: 100vh;
+  margin: 0;
+  margin-bottom: 33px;
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+
+body > .datamis-mobile-disabled {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: #939cb1;
+}
+
+body > .datamis-mobile-disabled span.logo {
+  content: url(/images/logo.png?09f162234c3e02e82f6bb60834764999);
+  height: 3.125rem;
+}
+
+@media screen and (max-width: 768px) {
+  body > #app {
+    display: none;
+  }
+}
+
+.full-height {
+  height: calc(100vh - 10);
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #282a2f;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #939cb1;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2f34;
+  border-radius: 5rem;
+}
+
+/***/
+
+.table.b-table > thead > tr > [aria-sort]:not(.b-table-sort-icon-left),
+.table.b-table > tfoot > tr > [aria-sort]:not(.b-table-sort-icon-left) {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'%3e%3cpath fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22zM51 101l25-23 24-22H1l25 22z'/%3e%3c/svg%3e");
+}
+
+/***/
+
+/***/
+
+.top-menu {
+  padding: 1.5rem 15px;
+  margin-bottom: 0.3rem;
+}
+
+.top-menu ul {
+  width: 100%;
+  margin: 1.1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-menu ul li {
+  display: inline-block;
+  margin-right: 0.9rem;
+}
+
+.top-menu ul li a {
+  color: #939cb1;
+}
+
+.top-menu span.logo {
+  content: url(/images/logo.png?09f162234c3e02e82f6bb60834764999);
+  height: 3.125rem;
+}
+
+/***/
+
+nav.navbar {
+  background: #282a2f;
+}
+
+nav.navbar .collapse .navbar-nav {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav.navbar .collapse .navbar-nav > li {
+  display: flex;
+  flex: 1%;
+  text-align: center;
+}
+
+nav.navbar .collapse .navbar-nav li a {
+  width: 100%;
+  color: #939cb1;
+  font-size: 0.7rem;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active,
+nav.navbar .collapse .navbar-nav li.active > a,
+nav.navbar .collapse .navbar-nav li.show > a,
+nav.navbar .collapse .navbar-nav li.show > a:hover,
+nav.navbar .collapse .navbar-nav li.show > a:hover,
+nav.navbar .collapse .navbar-nav li > a:active,
+nav.navbar .collapse .navbar-nav li > a:hover,
+nav.navbar .collapse .navbar-nav .dropdown-menu a:hover,
+nav.navbar .collapse .navbar-nav .dropdown-menu a:focus {
+  color: #ffffff;
+}
+
+nav.navbar .collapse .navbar-nav .dropdown-menu {
+  left: unset;
+  right: 0;
+  float: right;
+  text-align: right;
+  background-color: #282a2f;
+  border: 1px solid #282a2f;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+nav.navbar #navbarMain.collapse .navbar-nav li .dropdown-toggle::after {
+  display: none;
+}
+
+nav.navbar .collapse .navbar-nav .dropdown-menu .dropdown-item:hover,
+nav.navbar .collapse .navbar-nav .dropdown-menu .dropdown-item:focus {
+  background: transparent;
+}
+
+nav.navbar #navbarMain.collapse .navbar-nav > li > a.active,
+nav.navbar .collapse .navbar-nav .dropdown-menu .active {
+  background-color: #282a2f;
+  color: #939cb1;
+}
+
+nav.navbar #navbarMain.collapse .navbar-nav > li > a.router-link-exact-active.active {
+  color: #ffffff;
+}
+
+nav.navbar .collapse .navbar-nav .dropdown-menu .router-link-exact-active.active {
+  background-color: #23252a;
+  color: #ffffff;
+}
+
+/***/
+
+.alert-datamis {
+  width: 25%;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Login Box */
+
+.panel-logo {
+  display: block;
+  content: url(/images/logo.png?09f162234c3e02e82f6bb60834764999);
+  margin: 0 auto;
+}
+
+.login-box {
+  background: #282a2f;
+  color: #939cb1;
+  padding: 1rem 3.125rem 2.125rem 3.125rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.login-box-title {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 0.3rem;
+}
+
+/* Form */
+
+.login-box form {
+  padding: 1rem 0;
+  /* CheckBox */
+}
+
+.login-box form .form-control,
+.login-box form .form-control:focus {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: white;
+  text-align: center;
+}
+
+.login-box form .form-control::-moz-placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.login-box form .form-control:-ms-input-placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.login-box form .form-control::placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.login-box form input::-webkit-credentials-auto-fill-button {
+  background-color: #939cb1;
+}
+
+.login-box form input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.login-box form .form-control {
+  border-radius: 1rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+}
+
+.login-box form .form-check {
+  padding-right: 1.25rem;
+  padding-left: 0;
+  text-align: right;
+}
+
+.login-box form .form-check-input[type=checkbox] {
+  display: none;
+}
+
+.login-box form input[type=checkbox] + label span {
+  position: absolute;
+  right: -0.5rem;
+  width: 19px;
+  height: 19px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: #23252a;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.login-box form input[type=checkbox]:checked + label span {
+  background: #3490dc;
+}
+
+.login-box form .form-check-label {
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+/* Button */
+
+.btn-login {
+  margin: 0.25rem 0;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #3490dc;
+  border-color: #3490dc;
+  border-radius: 10rem;
+}
+
+.btn-login:hover {
+  background: #23252a;
+  border-color: rgba(147, 156, 177, 0.25);
+  color: #ffffff;
+}
+
+.btn-link {
+  width: 100%;
+  direction: rtl;
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #939cb1;
+}
+
+.btn-primary {
+  background: transparent;
+  border: #367bf6 solid thin;
+  border-radius: 2rem;
+  color: #367bf6;
+  font-size: 0.7rem;
+}
+
+.btn-primary:hover {
+  background: #367bf6;
+  color: #ffffff;
+}
+
+.btn-reset {
+  background: transparent;
+  border: #939cb1 solid thin;
+  border-radius: 2rem;
+  color: #939cb1;
+  font-size: 0.7rem;
+}
+
+.btn-reset:hover {
+  background: #939cb1;
+  color: #ffffff;
+}
+
+.btn-success {
+  background: transparent;
+  border: #75b369 solid thin;
+  border-radius: 2rem;
+  color: #75b369;
+  font-size: 0.7rem;
+}
+
+.btn-success:hover {
+  background: #75b369;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background: transparent;
+  border: #f65d31 solid thin;
+  border-radius: 2rem;
+  color: #f65d31;
+  font-size: 0.7rem;
+}
+
+.btn-danger:hover {
+  background: #f65d31;
+  color: #ffffff;
+}
+
+.btn-outline-danger {
+  color: #f65d31;
+  border-color: #f65d31;
+}
+
+.btn-outline-danger:hover {
+  color: #ffffff;
+  background-color: #f65d31;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+/***/
+
+header.page {
+  padding: 1rem 0;
+  font-family: IRANSans, iransansdn;
+}
+
+header.page .right {
+  text-align: right;
+  color: #939cb1;
+  font-family: IRANSansNumber, iransansdn;
+}
+
+header.page .right h4 {
+  font-weight: normal;
+}
+
+header.page .left {
+  text-align: left;
+  color: #939cb1;
+  font-family: IRANSansNumber, iransansdn;
+}
+
+header.page .left span {
+  padding: 8.5px 0;
+  font-size: 0.7rem;
+}
+
+header.page .left span.time {
+  border-right: solid 0.15rem rgba(147, 156, 177, 0.25);
+  padding-right: 0.3rem;
+}
+
+/***/
+
+.page .form-control.custom-select,
+.page .form-control.custom-select:focus {
+  font-family: IRANSans, iransansdn !important;
+  background: #282a2f !important;
+  color: white !important;
+  text-align: center !important;
+  border-radius: 1rem !important;
+  border: solid thin rgba(147, 156, 177, 0.25) !important;
+  font-size: 0.9rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+.page .form-control.custom-select::-moz-placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.page .form-control.custom-select:-ms-input-placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.page .form-control.custom-select::placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.page input::-webkit-credentials-auto-fill-button {
+  background-color: #939cb1;
+}
+
+.page input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.page form {
+  padding: 1rem 0;
+}
+
+.page .seat {
+  width: 150px;
+  height: 50px;
+  padding: 1rem;
+  background: #23252a;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+.page .seat.driver {
+  background: #23252a;
+  width: 70px;
+  height: 70px;
+  padding: 1.5rem 0;
+  border-radius: 50%;
+  border: solid thin #ffed4a;
+}
+
+.page .seat.null {
+  background: transparent;
+}
+
+.page .seat.empty {
+  background: #2553a1;
+  color: #ffffff;
+}
+
+.page .seat.taked {
+  background: #ff2d55;
+}
+
+.page .inner-main {
+  background: #282a2f;
+  color: #939cb1;
+  padding: 1rem 1rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.page .inner-main .inner-header {
+  text-align: right;
+  color: #367bf6;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page .inner-main .inner-body.row:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.page .inner-main .inner-body.row {
+  padding: 0 1rem;
+}
+
+.page .inner-main .inner-body.row div:not(:first-of-type) .form-group::before {
+  position: absolute;
+  content: "";
+  top: 1rem;
+  bottom: 1rem;
+  right: 0rem;
+  width: 0.05rem;
+  background-color: rgba(147, 156, 177, 0.25);
+}
+
+.page .inner-main .inner-body.row .form-group {
+  position: relative;
+  height: 100%;
+  background-color: #2d2f34;
+  direction: rtl;
+  /* Form Input */
+  /* CheckBox */
+}
+
+.page .inner-main .inner-body.row .form-group .form-check-label,
+.page .inner-main .inner-body.row .form-group .col-form-label {
+  text-align: right;
+  font-size: 0.7rem;
+}
+
+.page .inner-main .inner-body.row .form-group .bootstrap-select {
+  width: 100%;
+}
+
+.page .inner-main .inner-body.row .form-group .bootstrap-select .dropdown-toggle .filter-option {
+  text-align: center;
+}
+
+.page .inner-main .inner-body.row .form-group .bootstrap-select .dropdown-menu {
+  background: #2d2f34;
+}
+
+.page .inner-main .inner-body.row .form-group .bootstrap-select .dropdown-menu .dropdown-item {
+  padding: 0.25rem 0.25rem 0.25rem 1.5rem;
+  text-align: right;
+  color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group .bootstrap-select .dropdown-menu .dropdown-item.active,
+.page .inner-main .inner-body.row .form-group .bootstrap-select .dropdown-menu .dropdown-item:active {
+  background: #2d2f34;
+  color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group .bootstrap-select .no-results {
+  background: #2d2f34;
+  color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group .form-control.custom-select .bootstrap-select > .dropdown-toggle,
+.page .inner-main .inner-body.row .form-group .form-control,
+.page .inner-main .inner-body.row .form-group .form-control:focus {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.page .inner-main .inner-body.row .form-group .form-control::-moz-placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group .form-control:-ms-input-placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group .form-control::placeholder {
+  font-family: IRANSans, iransansdn;
+  background: #282a2f;
+  color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group input::-webkit-credentials-auto-fill-button {
+  background-color: #939cb1;
+}
+
+.page .inner-main .inner-body.row .form-group input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.page .inner-main .inner-body.row .form-group .form-radio-datamis,
+.page .inner-main .inner-body.row .form-group .form-check-datamis {
+  text-align: right;
+}
+
+.page .inner-main .inner-body.row .form-group .form-radio-input[type=radio],
+.page .inner-main .inner-body.row .form-group .form-check-input[type=checkbox] {
+  display: none;
+}
+
+.page .inner-main .inner-body.row .form-group input[type=radio] + label span,
+.page .inner-main .inner-body.row .form-group input[type=checkbox] + label span {
+  display: inline-block;
+  right: 0.3rem;
+  width: 19px;
+  height: 19px;
+  margin: -2px 0 0 10px;
+  vertical-align: middle;
+  background: #23252a;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.page .inner-main .inner-body.row .form-group input[type=radio] + label span {
+  border-radius: 50%;
+}
+
+.page .inner-main .inner-body.row .form-group input[type=radio]:checked + label span,
+.page .inner-main .inner-body.row .form-group input[type=checkbox]:checked + label span {
+  background: #3490dc;
+}
+
+.page .inner-main .inner-body.row .form-group .form-radio-label,
+.page .inner-main .inner-body.row .form-group .form-check-label {
+  display: inline-block;
+  padding: 0.5rem 0;
+  margin-bottom: unset;
+}
+
+.page .inner-main .inner-body.row .form-group textarea.form-control {
+  direction: rtl;
+  text-align: justify;
+}
+
+.page .inner-main .inner-body.row .form-group select.form-control[multiple] {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.page .vpd-input-group {
+  position: relative;
+}
+
+.page .vpd-input-group .vpd-icon-btn {
+  position: absolute;
+  background: unset !important;
+  top: 28%;
+  right: 1%;
+}
+
+.page .button-body > div {
+  padding: 0;
+}
+
+.page .button-body {
+  border-bottom: #525252 solid thin;
+  margin-bottom: 1rem;
+}
+
+.page .button-body .button-main {
+  display: block;
+  text-align: right;
+  color: #939cb1;
+  background: #282a2f;
+  color: #939cb1;
+  padding: 1rem 1rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  border-radius: 0.5rem;
+  margin: 0 0 1rem 1rem;
+}
+
+.page .button-body .button-main a {
+  display: block;
+  text-align: right;
+  color: #939cb1;
+}
+
+.page .button-body .button-main i {
+  margin-left: 0.65rem;
+}
+
+.page .button-body .button-main span.button-progress {
+  display: block;
+  width: 100%;
+  height: 0.35rem;
+  margin-top: 1rem;
+  background: #e3342f;
+  border-radius: 2rem;
+}
+
+.page .button-body .button-main span.button-progress.red {
+  background: #e3342f;
+}
+
+.page table.table {
+  color: #939cb1;
+  margin-bottom: 1rem;
+  direction: rtl;
+  text-align: right;
+  font-family: IRANSansNumber, iransansdn;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.page table.table thead tr th {
+  border-top: rgba(147, 156, 177, 0.25) solid thin;
+  font-weight: 200;
+  border-bottom: rgba(147, 156, 177, 0.75) solid 0.1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 0.7rem;
+}
+
+.page table.table tbody tr.empty {
+  display: block;
+  width: 100%;
+  height: 1rem;
+}
+
+.page table.table tbody tr td {
+  background: #282a2f;
+  border: unset;
+  font-weight: 200;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page table.table tbody tr td a {
+  color: #939cb1;
+}
+
+.page table.table tbody tr td a i {
+  border: rgba(147, 156, 177, 0.75) solid 0.002rem;
+  padding: 0.45rem;
+  margin-bottom: 0.25rem;
+}
+
+.page .dropdown-menu,
+.page .dropdown-input,
+.page .dropdown-input input,
+.page .search-in-table.form-control,
+.page .search-in-table.form-control:focus {
+  width: 100% !important;
+  font-family: IRANSans, iransansdn !important;
+  background: #282a2f !important;
+  color: white !important;
+  text-align: center !important;
+  border-radius: 1rem !important;
+  border: solid thin rgba(147, 156, 177, 0.25) !important;
+  font-size: 0.9rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+.page .dropdown-menu .form-group {
+  margin: 0;
+}
+
+.page .dropdown-content {
+  background-color: #2d2f34 !important;
+  border-color: rgba(147, 156, 177, 0.25) !important;
+}
+
+.page .dropdown-content .dropdown-item {
+  padding: 0.25rem 0.25rem 0.25rem 1.5rem !important;
+  text-align: right !important;
+  color: #939cb1 !important;
+}
+
+.page .dropdown-content .dropdown-item.active,
+.page .dropdown-content .dropdown-item:active {
+  background: #2d2f34 !important;
+  color: #939cb1 !important;
+}
+
+.page .card-progress .card-progress-body {
+  margin-bottom: 1rem;
+  display: block;
+  text-align: right;
+  color: #939cb1;
+  min-height: 1rem;
+  background: #282a2f;
+  color: #939cb1;
+  padding: 1rem 1rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-family: IRANSansNumber, iransansdn;
+}
+
+.page .card-progress .card-progress-body i {
+  margin-left: 0.65rem;
+}
+
+.page .card-progress .card-progress-body div.card-progress-header {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.page .card-progress .card-progress-body div.card-progress-header span {
+  font-size: 0.3rem;
+}
+
+.page .card-progress .card-progress-body div.card-progress-header h5.numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: lighter;
+}
+
+.page .card-progress .card-progress-body div.progress {
+  height: 0.45rem;
+  background-color: #f65d3190 !important;
+}
+
+.page .card-progress .card-progress-body div.progress .progress-bar,
+.page .card-progress .card-progress-body div.progress .bg-default {
+  background-color: #f65d31 !important;
+}
+
+.page .card-progress .card-progress-body div.progress .bg-success {
+  background-color: #75b369 !important;
+}
+
+.page .card-progress .card-progress-body div.progress .bg-danger {
+  background-color: #e3342f !important;
+}
+
+.page .card-progress .card-progress-body div.progress .bg-primary {
+  background-color: #387ff7 !important;
+}
+
+.page .card-progress .card-progress-body div.progress.bg-default {
+  background-color: #f65d3190 !important;
+}
+
+.page .card-progress .card-progress-body div.progress.bg-success {
+  background-color: #75b36990 !important;
+}
+
+.page .card-progress .card-progress-body div.progress.bg-danger {
+  background-color: #e3342f90 !important;
+}
+
+.page .card-progress .card-progress-body div.progress.bg-primary {
+  background-color: #387ff790 !important;
+}
+
+.page .pick_profile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #2d2f34;
+}
+
+.page .pick_profile input {
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.page .pick_profile img.profile {
+  display: block;
+  opacity: 1;
+  z-index: 95;
+  cursor: pointer;
+  margin: 1rem auto;
+  width: 60%;
+}
+
+.page .pick_profile .profile_placeholder {
+  display: inline-block;
+  opacity: 0.5;
+  position: absolute;
+  top: 35%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 2rem;
+  text-align: center;
+  z-index: 88;
+  cursor: pointer;
+}
+
+.pagination {
+  direction: ltr;
+  margin: 0.5rem 0;
+}
+
+.pagination .page-item .page-link {
+  color: #939cb1;
+  background-color: #282a2f;
+  border-color: rgba(147, 156, 177, 0.25);
+}
+
+.pagination .page-item.active .page-link {
+  color: #939cb1;
+  background-color: rgba(147, 156, 177, 0.25);
+  border-color: rgba(147, 156, 177, 0.25);
+  border-radius: 0;
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  border-radius: 0;
+}
+
+.vpd-container .vpd-actions,
+.vpd-container .vpd-header {
+  background-color: #282a2f !important;
+}
+
+.vpd-container .vpd-date.direction-prev {
+  text-align: center;
+}
+
+.vpd-container .vpd-body {
+  background-color: #2d2f34;
+}
+
+.vpd-container .vpd-body svg path {
+  fill: #ffffff;
+}
+
+.vpd-container .vpd-body .vpd-addon-list,
+.vpd-container .vpd-body .vpd-addon-list-content {
+  background-color: #2d2f34 !important;
+}
+
+.vpd-container .vpd-body .vpd-addon-list,
+.vpd-container .vpd-body .vpd-day-effect,
+.vpd-container .vpd-body .vpd-addon-list-item {
+  border-color: #2d2f34 !important;
+}
+
+.vpd-container .vpd-body .vpd-day.selected .vpd-day-effect,
+.vpd-container .vpd-body .vpd-day:hover .vpd-day-effect,
+.vpd-container .vpd-body .vpd-addon-list-item.selected,
+.vpd-container .vpd-body .vpd-addon-list-item:hover {
+  background-color: #367bf6 !important;
+  color: #ffffff !important;
+}
+
+.vpd-container .vpd-body .vpd-close-addon {
+  color: #ffffff;
+}
+
+.vpd-container .vpd-actions {
+  text-align: center;
+}
+
+.vpd-container .vpd-actions button {
+  color: #939cb1 !important;
+}
+
+.vpd-container .vpd-actions button:hover {
+  background-color: #939cb1 !important;
+  color: #ffffff !important;
+}
+
+/***/
+
+.modal .modal-dialog .modal-content {
+  background-color: #23252a;
+  color: #939cb1;
+  padding: 1rem 1rem;
+  border: solid thin rgba(147, 156, 177, 0.25);
+}
+
+.modal .modal-dialog .modal-content .modal-header,
+.modal .modal-dialog .modal-content .modal-footer {
+  border-color: rgba(147, 156, 177, 0.25);
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  text-align: right;
+}
+
+.modal .modal-dialog .modal-content .modal-footer > div {
+  display: flex;
+  width: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-footer > div > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/***/
+
+body > div > footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #282a2f;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 0.7rem;
+  z-index: 9999;
+}
+
+body > div > footer a,
+body > div > footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
