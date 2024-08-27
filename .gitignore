@@ -5,3 +5,6 @@ Homestead.yaml
 .env
 /.sample
 /app/Http
+/resources/fonts
+/resources/lang
+/resources/css
